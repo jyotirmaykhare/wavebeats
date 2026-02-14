@@ -152,14 +152,17 @@ progressBar.addEventListener("input", () => {
   audio.currentTime = (progressBar.value / 100) * audio.duration;
 });
 
-/* Volume */
+/* Volume FIXED */
 volumeSlider.value = 0.5;
 audio.volume = 0.5;
 volumeValue.innerText = "50%";
 
 volumeSlider.addEventListener("input", () => {
   audio.volume = volumeSlider.value;
-  volumeValue.innerText = Math.round(volume.volume * 100) + "%";
+
+  /* ✅ Correct Percentage Update */
+  volumeValue.innerText =
+    Math.round(audio.volume * 100) + "%";
 });
 
 /* Favorites */
@@ -203,7 +206,7 @@ function renderRecent() {
 }
 renderRecent();
 
-/* Advanced Playlist */
+/* Playlist System */
 function updatePlaylistDropdown() {
   playlistSelect.innerHTML = "";
 
