@@ -8,8 +8,7 @@ It provides a clean UI, playlist management, favorites, shuffle/repeat playback,
 
 ## 🚀 Live Demo
 
-👉 https://wavebeats.netlify.app  
-*(Replace with your deployed Netlify link)*
+👉 https://wavebeats0.netlify.app/
 
 ---
 
